@@ -1,4 +1,4 @@
-# Kenneth 개발 가이트
+# Kenneth 개발 가이드
 
 ## 1. 기본 원칙 (Basic Principles)
 
