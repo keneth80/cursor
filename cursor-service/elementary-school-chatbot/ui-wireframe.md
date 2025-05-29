@@ -68,54 +68,60 @@
 
 ## 1) Users
 
-필드명 타입 설명
-user_id UUID 유저 고유 ID
-nickname STRING 아이가 설정한 이름
-age INT 나이
-level INT 레벨
-created_at DATETIME 가입일
+| 필드명     | 타입     | 설명               |
+| ---------- | -------- | ------------------ |
+| user_id    | UUID     | 유저 고유 ID       |
+| nickname   | STRING   | 아이가 설정한 이름 |
+| age        | INT      | 나이               |
+| level      | INT      | 레벨               |
+| created_at | DATETIME | 가입일             |
 
 ## 2) Missions
 
-필드명 타입 설명
-mission_id UUID 미션 ID
-title STRING 미션 제목
-description TEXT 미션 설명
-type STRING 'daily', 'weekly'
-reward_type STRING 스티커, 경험치 등
+| 필드명      | 타입   | 설명              |
+| ----------- | ------ | ----------------- |
+| mission_id  | UUID   | 미션 ID           |
+| title       | STRING | 미션 제목         |
+| description | TEXT   | 미션 설명         |
+| type        | STRING | 'daily', 'weekly' |
+| reward_type | STRING | 스티커, 경험치 등 |
 
 ## 3) UserMissions
 
-필드명 타입 설명
-user_id UUID 유저 ID
-mission_id UUID 미션 ID
-status BOOLEAN 완료 여부
-completed_at DATETIME 완료 시간
+| 필드명       | 타입     | 설명      |
+| ------------ | -------- | --------- |
+| user_id      | UUID     | 유저 ID   |
+| mission_id   | UUID     | 미션 ID   |
+| status       | BOOLEAN  | 완료 여부 |
+| completed_at | DATETIME | 완료 시간 |
 
 ## 4) Dialogues
 
-필드명 타입 설명
-dialogue_id UUID 대화 ID
-user_id UUID 유저 ID
-message TEXT 사용자의 질문/답변
-bot_response TEXT 챗봇의 응답
-created_at DATETIME 대화 시간
+| 필드명       | 타입     | 설명               |
+| ------------ | -------- | ------------------ |
+| dialogue_id  | UUID     | 대화 ID            |
+| user_id      | UUID     | 유저 ID            |
+| message      | TEXT     | 사용자의 질문/답변 |
+| bot_response | TEXT     | 챗봇의 응답        |
+| created_at   | DATETIME | 대화 시간          |
 
 ## 5) Stickers
 
-필드명 타입 설명
-sticker_id UUID 스티커 ID
-name STRING 스티커 이름
-image_url STRING 이미지 경로
-category STRING '정직', '배려' 등
+| 필드명     | 타입   | 설명              |
+| ---------- | ------ | ----------------- |
+| sticker_id | UUID   | 스티커 ID         |
+| name       | STRING | 스티커 이름       |
+| image_url  | STRING | 이미지 경로       |
+| category   | STRING | '정직', '배려' 등 |
 
 ## 6) Stories
 
-필드명 타입 설명
-story_id UUID 동화 ID
-title STRING 제목
-content TEXT 본문 (또는 음성 URL)
-category STRING '정직', '협동' 등
+| 필드명   | 타입   | 설명                 |
+| -------- | ------ | -------------------- |
+| story_id | UUID   | 동화 ID              |
+| title    | STRING | 제목                 |
+| content  | TEXT   | 본문 (또는 음성 URL) |
+| category | STRING | '정직', '협동' 등    |
 
 # ✅ 3. 챗봇 시나리오 스크립트 예시
 
